@@ -11,4 +11,26 @@
 html {
 	font-size: 16px;
 	font-family: "roboto", sans-serif;
+	--primary-color: hsl(210, 32%, 28%);
+	--secondary-color: hsl(0, 84%, 64%);
+	--light-accent-color: hsl(0, 0%, 87%);
+	--dark-accent-color: hsl(216, 18%, 16%);
+	--dark-accent-img-filter: 
+	brightness(0) 
+	saturate(100%) 
+	invert(10%) 
+	sepia(5%) 
+	saturate(3243%) 
+	hue-rotate(177deg) 
+	brightness(91%) 
+	contrast(85%);
+	--secondary-img-filter:
+	brightness(0) 
+	saturate(100%) 
+	invert(34%) 
+	sepia(24%) 
+	saturate(3076%) 
+	hue-rotate(325deg) 
+	brightness(119%) 
+	contrast(88%);
 }
