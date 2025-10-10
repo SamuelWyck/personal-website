@@ -42,6 +42,8 @@ header {
     z-index: 1;
     align-self: end;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
     margin-right: 3rem;
