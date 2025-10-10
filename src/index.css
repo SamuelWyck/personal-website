@@ -33,4 +33,7 @@ html {
 	hue-rotate(325deg) 
 	brightness(119%) 
 	contrast(88%);
+
+	scroll-behavior: smooth;
+	scrollbar-color: var(--primary-color) var(--light-accent-color);
 }
