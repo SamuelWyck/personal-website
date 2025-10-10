@@ -1,7 +1,8 @@
 import "../styles/header.css";
 import linkedinImg from "../assets/linkedin.svg";
 import githubImg from "../assets/github.svg";
-import ToolTipWrapper from "./toolTipWrapper";
+import blogImg from "../assets/post.svg";
+import ToolTipWrapper from "./toolTipWrapper.jsx";
 
 
 
@@ -25,7 +26,10 @@ function Header() {
                     </a>
                 </ToolTipWrapper>
                 <ToolTipWrapper toolTip={"My Blog"}>
-                    <a href="https://odin-blog-site.pages.dev/posts">Blog</a>
+                    <a href="https://odin-blog-site.pages.dev/posts">
+                        <img src={blogImg} alt="blog" />
+                        <p>Blog</p>
+                    </a>
                 </ToolTipWrapper>
             </nav>
         </header>
