@@ -1,4 +1,5 @@
 import App from "./App.jsx";
+import PortfolioPage from "./components/portfolioPage.jsx";
 
 
 const routes = [
@@ -9,7 +10,7 @@ const routes = [
             {
                 path: "/",
                 index: true,
-                element: <p>hello</p>
+                element: <PortfolioPage />
             }
         ]    
     }
