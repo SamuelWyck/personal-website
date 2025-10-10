@@ -25,7 +25,7 @@ function Header() {
                     </a>
                 </ToolTipWrapper>
                 <ToolTipWrapper toolTip={"My Blog"}>
-                    <a href="#">Blog</a>
+                    <a href="https://odin-blog-site.pages.dev/posts">Blog</a>
                 </ToolTipWrapper>
             </nav>
         </header>
