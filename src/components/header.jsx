@@ -11,7 +11,7 @@ function Header() {
         <header>
             <div className="header-patch"></div>
             <div className="header-backing"></div>
-            <p className="header-title">Samuel Wycklendt</p>
+            <h1 className="header-title">Samuel Wycklendt</h1>
             <nav className="header-nav">
                 <ToolTipWrapper toolTip={"My LinkedIn"}>
                     <a href="https://www.linkedin.com/in/swycklendt/">
