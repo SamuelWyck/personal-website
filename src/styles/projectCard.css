@@ -1,0 +1,157 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-info-section {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 1rem;
+}
+
+/* .project-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+} */
+
+.project-title {
+    font-size: clamp(1.3rem, .5rem + 2vw, 1.9rem);
+    color: var(--primary-color);
+    text-shadow: 0px 0px 2px var(--dark-accent-color);
+    font-family: "Stalinist One";
+    font-weight: normal;
+}
+
+.project-img-wrapper {
+    z-index: 1;
+    margin: 0 1rem;
+    max-width: 750px;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 3px solid var(--secondary-color);
+    display: flex;
+    box-shadow: 0px 0px 5px 0px var(--dark-accent-color);
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    
+}
+
+.project-description {
+    position: relative;
+    font-size: clamp(1rem, .5rem + 2vw, 1.5rem);
+    max-width: 600px;
+    color: var(--light-accent-color);
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: clamp(2rem, 1rem + 3vw, 4rem) 2rem;
+    font-weight: bold;
+}
+
+.project-description p {
+    z-index: 1;
+    position: relative;
+}
+
+.project-description .backing {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 150%;
+    left: -50%;
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 5px 0px var(--dark-accent-color);
+}
+
+.details-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.details-section > * {
+    flex: 1;
+}
+
+.project-tech-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links a {
+    display: block;
+    width: clamp(25px, 15px + 2vw, 45px);
+    height: clamp(25px, 15px + 2vw, 45px);
+}
+
+.project-links a img {
+    filter: var(--dark-accent-img-filter);
+}
+
+.project-links a:hover img, .project-links a:focus img {
+    filter: var(--secondary-img-filter);
+}
+
+.tech-used {
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    color: var(--light-accent-color);
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 0px var(--dark-accent-color);
+}
+
+.tech-used-title {
+    font-size: clamp(1.3rem, .5rem + 2vw, 2rem);
+    text-shadow: 2px 3px 1px var(--dark-accent-color);
+}
+
+.tech-used ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+}
+
+.tech-used li {
+    font-size: clamp(1rem, .5rem + 2vw, 1.5rem);
+}
+
+.project-details {
+    background-color: var(--secondary-color);
+    color: var(--dark-accent-color);
+    font-size: clamp(1rem, .5rem + 2vw, 1.5rem);
+}
+
+
+
+@media only screen and (width < 1414px) {
+    .project-description .backing {
+        visibility: hidden;
+    }
+
+    .project-description {
+        box-shadow: 0px 0px 5px 0px var(--dark-accent-color);
+    }
+}
