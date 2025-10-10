@@ -40,6 +40,7 @@ header {
     z-index: 1;
     align-self: end;
     display: flex;
+    align-items: center;
     gap: 2rem;
     margin-right: 3rem;
 }
