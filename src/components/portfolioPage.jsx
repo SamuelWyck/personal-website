@@ -13,7 +13,7 @@ function PortfolioPage() {
         const cards = [];
         for (let project of projects) {
             cards.push(
-                <ProjectCard project={project} />
+                <ProjectCard project={project} key={project.title} />
             );
         }
         return cards;
