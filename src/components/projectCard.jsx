@@ -42,11 +42,13 @@ function ProjectCard({project, flipCard}) {
                             <img src={liveLink} alt="see project" />
                         </a>
                         </ToolTipWrapper>
+                        {!project.gitHubLink ||
                         <ToolTipWrapper toolTip={"See code"}>
                         <a href={project.gitHubLink} target="_blank" referrerPolicy="no-referrer" >
                             <img src={gitHubImg} alt="project github" />
                         </a>
                         </ToolTipWrapper>
+                        }
                         {!project.downloadLink ||
                         <ToolTipWrapper toolTip={"Go to download page"}>
                         <a href={project.downloadLink} target="_blank" referrerPolicy="no-referrer" >
