@@ -2,6 +2,10 @@ import beakBookImg from "../assets/projectImages/beakbook.png";
 import owlRoostImg from "../assets/projectImages/owlroost.png";
 import waldoImg from "../assets/projectImages/waldo.png";
 import warpCommanderImg from "../assets/projectImages/warpCommander.png";
+import blogImg from "../assets/projectImages/blog.png";
+import doogleGriveImg from "../assets/projectImages/fileUploader.png";
+import battleshipsImg from "../assets/projectImages/battleships.png";
+import pongImg from "../assets/projectImages/pong.png";
 
 
 
@@ -42,6 +46,43 @@ const projects = [
         projectLink: "https://wheres-waldo-949.pages.dev/",
         gitHubLink: "https://github.com/SamuelWyck/wheres-waldo-api",
         techUsed: ["React.js", "Express.js", "postgreSQL", "Prisma ORM"]
+    },
+    {
+        title: "Blog Site",
+        bannerImg: blogImg,
+        description: "A blog web application where authenticated users can leave comments on blog posts. Only users with admin privileges are able to create blog posts.",
+        details: "TinyMCE is used as a rich text editor when writing blog posts. This allows for variable text sizes, bolded text, and inserted links. Authentication is handled by jsonwebtokens.",
+        projectLink: "https://odin-blog-site.pages.dev/posts",
+        gitHubLink: "https://github.com/SamuelWyck/odin-blog-api",
+        techUsed: ["React.js", "Express.js", "postgreSQL", "Passport.js", "Prisma ORM"]
+    },
+    {
+        title: "Doogle Grive",
+        bannerImg: doogleGriveImg,
+        description: "A cloud storage web application akin to Google Drive. Users can upload files to the cloud and download them anywhere using their account. Users can also create folders to organize and manage their files.",
+        details: "Express's EJS engine is used to render all pages of this application on the server side.",
+        projectLink: "https://odin-file-drive.onrender.com/",
+        gitHubLink: "https://github.com/SamuelWyck/odin-file-drive",
+        techUsed: ["Express.js", "postgreSQL", "Passport.js"]
+    },
+    {
+        title: "Battleships",
+        bannerImg: battleshipsImg,
+        description: "The game battleships in a frontend web application. The user can place their ships and play against the computer.",
+        details: "The computer uses a probability density map to make intelligent guesses. This allows the computer to always guess the position most likely to contain a ship.",
+        projectLink: "https://samuelwyck.github.io/battleships/",
+        gitHubLink: "https://github.com/SamuelWyck/battleships",
+        techUsed: ["Webpack", "JavaScript"]
+    },
+    {
+        title: "Pong",
+        bannerImg: pongImg,
+        description: "The game pong created in python. The player plays against the computer in a match that goes first to eleven.",
+        details: "This game was created using pygame and python without a game engine. It was the first game I created with real-time action and physics.",
+        projectLink: "https://www.youtube.com/watch?v=fNSEseyzia4",
+        gitHubLink: "https://github.com/SamuelWyck/Pong-Game",
+        downloadLink: "https://sirgoodman007.itch.io/pong",
+        techUsed: ["Python", "Pygame"]
     }
 ];
 
