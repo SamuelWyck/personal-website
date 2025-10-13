@@ -58,7 +58,7 @@ header {
     color: var(--dark-accent-color);
     align-items: center;
     --filter: var(--dark-accent-img-filter);
-    outline: none
+    /* outline: none */
 }
 
 .header-nav a img {
