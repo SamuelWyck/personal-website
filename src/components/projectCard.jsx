@@ -26,11 +26,9 @@ function ProjectCard({project}) {
         <article className="project-card">
             <h3 className="project-title">{project.title}</h3>
             <section className="main-info-section">
-                {/* <div className="project-banner"> */}
-                    <div className="project-img-wrapper">
-                        <img src={project.bannerImg} alt="project picture" />
-                    </div>
-                {/* </div> */}
+                <div className="project-img-wrapper">
+                    <img src={project.bannerImg} alt="project picture" />
+                </div>
                 <div className="project-description">
                     <div className="backing"></div>
                     <p>{project.description}</p>
@@ -58,6 +56,7 @@ function ProjectCard({project}) {
                         }
                     </nav>
                     <div className="tech-used">
+                        <div className="backing"></div>
                         <p className="tech-used-title">Tech used</p>
                         <ul>
                             {techRef.current}
