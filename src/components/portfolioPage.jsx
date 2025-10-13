@@ -11,9 +11,16 @@ function PortfolioPage() {
 
     function getProjectCards(projects) {
         const cards = [];
-        for (let project of projects) {
+        for (let i = 0; i < projects.length; i += 1) {
+            const project = projects[i];
+            const flipCard = i % 2 !== 0;
+
             cards.push(
-                <ProjectCard project={project} key={project.title} />
+                <ProjectCard 
+                    project={project} 
+                    key={project.title} 
+                    flipCard={flipCard} 
+                />
             );
         }
         return cards;
