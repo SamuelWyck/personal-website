@@ -7,7 +7,7 @@ import ToolTipWrapper from "./toolTipWrapper.jsx";
 
 
 
-function ProjectCard({project}) {
+function ProjectCard({project, flipCard}) {
     const techRef = useRef(getTechElements(project.techUsed));
 
 
@@ -25,16 +25,16 @@ function ProjectCard({project}) {
     return (
         <article className="project-card">
             <h3 className="project-title">{project.title}</h3>
-            <section className="main-info-section">
+            <section className={`main-info-section${flipCard ? " reverse" : ""}`}>
                 <div className="project-img-wrapper">
                     <img src={project.bannerImg} alt="project picture" />
                 </div>
                 <div className="project-description">
-                    <div className="backing"></div>
+                    <div className={`backing${flipCard ? " reverse" : ""}`}></div>
                     <p>{project.description}</p>
                 </div>
             </section>
-            <section className="details-section">
+            <section className={`details-section${flipCard ? " reverse" : ""}`}>
                 <div className="project-tech-info">
                     <nav className="project-links">
                         <ToolTipWrapper toolTip={"See project"}>
@@ -56,7 +56,7 @@ function ProjectCard({project}) {
                         }
                     </nav>
                     <div className="tech-used">
-                        <div className="backing"></div>
+                        <div className={`backing${flipCard ? " reverse" : ""}`}></div>
                         <p className="tech-used-title">Tech used</p>
                         <ul>
                             {techRef.current}
