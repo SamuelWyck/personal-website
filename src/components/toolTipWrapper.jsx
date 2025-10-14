@@ -1,4 +1,4 @@
-import "../styles/ToolTipWrapper.css";
+import "../styles/toolTipWrapper.css";
 
 
 
