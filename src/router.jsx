@@ -1,5 +1,6 @@
 import App from "./App.jsx";
 import PortfolioPage from "./components/portfolioPage.jsx";
+import { Navigate } from "react-router-dom";
 
 
 const routes = [
@@ -11,6 +12,10 @@ const routes = [
                 path: "/",
                 index: true,
                 element: <PortfolioPage />
+            },
+            {
+                path: "*",
+                element: <Navigate to="/" replace={true} />
             }
         ]    
     }
