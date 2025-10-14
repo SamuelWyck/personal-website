@@ -6,6 +6,9 @@ import blogImg from "../assets/projectImages/blog.png";
 import doogleGriveImg from "../assets/projectImages/fileUploader.png";
 import battleshipsImg from "../assets/projectImages/battleships.png";
 import pongImg from "../assets/projectImages/pong.png";
+import weatherWatchImg from "../assets/projectImages/weatherWatch.png";
+import calculatorImg from "../assets/projectImages/calculator.png";
+import blackjackImg from "../assets/projectImages/blackjack.png";
 
 
 
@@ -32,7 +35,7 @@ const projects = [
     {
         title: "Warp Commander",
         bannerImg: warpCommanderImg,
-        description: "A retro single player game published on Steam. Players play as a spaceship and fight off waves of enemies and bosses. Players who make it far enough will add their score to the leaderboard.",
+        description: "A retro single player game published on Steam. Players play as a spaceship and fight off waves of enemies and bosses. Players who make it far enough can add their score to the leaderboard.",
         details: "This project was a challange to myself to make and publish a game without using a game engine. It was a solo dev project made purely in python using the pygame library.",
         projectLink: "https://www.youtube.com/watch?v=RFcaEz8wLWc",
         downloadLink: "https://store.steampowered.com/app/3840360/Warp_Commander/",
@@ -82,6 +85,33 @@ const projects = [
         projectLink: "https://www.youtube.com/watch?v=fNSEseyzia4",
         gitHubLink: "https://github.com/SamuelWyck/Pong-Game",
         downloadLink: "https://sirgoodman007.itch.io/pong",
+        techUsed: ["Python", "Pygame"]
+    },
+    {
+        title: "Weather Watch",
+        bannerImg: weatherWatchImg,
+        description: "A frontend weather web application. Users can get a detailed forecast for the week from any location.",
+        details: "The Visual Crossing weather api is used to get up to date weather information for any location the user provides. Units can also be changed from imperial to metric.",
+        projectLink: "https://samuelwyck.github.io/weather-app/",
+        gitHubLink: "https://github.com/SamuelWyck/weather-app",
+        techUsed: ["JavaScript", "Webpack"]
+    },
+    {
+        title: "Scientific Calculator",
+        bannerImg: calculatorImg,
+        description: "A working scientific calculator. Users can calculate complex expressions and use common trigonometric functions.",
+        details: "Reverse Polish Notation is used to parse out user input, allowing users to enter long and complex expressions. All answers are carefully parsed to ensure that information displayed is always consistent and highly precise.",
+        projectLink: "https://samuelwyck.github.io/odin-calculator/",
+        gitHubLink: "https://github.com/SamuelWyck/odin-calculator",
+        techUsed: ["JavaScript", "HTML", "CSS"]
+    },
+    {
+        title: "Blackjack",
+        bannerImg: blackjackImg,
+        description: "The game Blackjack created in Python using the Pygame library. Players can 'bet' against the computer to attempt to get the highscore.",
+        details: "This was the first project I ever created with rendered graphics and sounds.",
+        projectLink: "https://www.youtube.com/watch?v=uaMXLDAhiwA",
+        gitHubLink: "https://github.com/SamuelWyck/Blackjack-Game",
         techUsed: ["Python", "Pygame"]
     }
 ];
