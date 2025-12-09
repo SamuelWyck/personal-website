@@ -9,10 +9,20 @@ import pongImg from "../assets/projectImages/pong.png";
 import weatherWatchImg from "../assets/projectImages/weatherWatch.png";
 import calculatorImg from "../assets/projectImages/calculator.png";
 import blackjackImg from "../assets/projectImages/blackjack.png";
+import langtonsAntImg from "../assets/projectImages/langtonsAnt.png";
 
 
 
 const projects = [
+    {
+        title: "Langton's Ant",
+        bannerImg: langtonsAntImg,
+        description: "A front-end web app demonstrating Langton's Ant. Users can modify the algorithm's speed, and color scheme. Users can also change the number and type of ants.",
+        details: "The grid is designed to support both two state, and four state 'ants' on the same grid at the same time. The grid also supports hundreds of ants at a time.",
+        projectLink: "https://samuelwyck.github.io/turing-machine/",
+        gitHubLink: "https://github.com/SamuelWyck/turing-machine",
+        techUsed: ["JavaScript", "HTML", "CSS", "Webpack"]
+    },
     {
         title: "Beakbook",
         bannerImg: beakBookImg,
