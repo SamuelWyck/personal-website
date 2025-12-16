@@ -10,10 +10,20 @@ import weatherWatchImg from "../assets/projectImages/weatherWatch.png";
 import calculatorImg from "../assets/projectImages/calculator.png";
 import blackjackImg from "../assets/projectImages/blackjack.png";
 import langtonsAntImg from "../assets/projectImages/langtonsAnt.png";
+import searchAlgorithms from "../assets/projectImages/searchAlgorithms.png";
 
 
 
 const projects = [
+    {
+        title: "Maze Search",
+        bannerImg: searchAlgorithms,
+        description: "A front-end web app visually demonstrating depth-first and breadth-first search algorithms. Users can edit the maze, step through each search, and change algorithms.",
+        details: "The random grid is generated using a modified random depth-first search algorithm. Each step of the search is stored in a history list so users can undo and redo each step.",
+        projectLink: "https://samuelwyck.github.io/maze-search/",
+        gitHubLink: "https://github.com/SamuelWyck/maze-search",
+        techUsed: ["JavaScript", "Webpack", "HTML", "CSS"]
+    },
     {
         title: "Langton's Ant",
         bannerImg: langtonsAntImg,
@@ -21,7 +31,7 @@ const projects = [
         details: "The grid is designed to support both two state, and four state 'ants' on the same grid at the same time. The grid also supports hundreds of ants at a time.",
         projectLink: "https://samuelwyck.github.io/turing-machine/",
         gitHubLink: "https://github.com/SamuelWyck/turing-machine",
-        techUsed: ["JavaScript", "HTML", "CSS", "Webpack"]
+        techUsed: ["JavaScript", "Webpack", "HTML", "CSS"]
     },
     {
         title: "Beakbook",
