@@ -11,10 +11,20 @@ import calculatorImg from "../assets/projectImages/calculator.png";
 import blackjackImg from "../assets/projectImages/blackjack.png";
 import langtonsAntImg from "../assets/projectImages/langtonsAnt.png";
 import searchAlgorithms from "../assets/projectImages/searchAlgorithms.png";
+import wordleImg from "../assets/projectImages/wordleGame.png";
 
 
 
 const projects = [
+    {
+        title: "Wordle",
+        bannerImg: wordleImg,
+        description: "The classic game wordle in a fullstack web app. Users can visit every day to guess the word-of-the-day, which is pulled from a pool of 5700 five-letter English words.",
+        details: "The backend server validates user guesses and handles picking the word-of-the-day every day at the same time every day. A user's session is stored on the client side to allow for the game to remember progress.",
+        projectLink: "https://braingames-d50.pages.dev/",
+        gitHubLink: "https://github.com/SamuelWyck/wordle-api",
+        techUsed: ["PostgreSQL", "Node.js", "Express.js", "React.js"]
+    },
     {
         title: "Maze Search",
         bannerImg: searchAlgorithms,
