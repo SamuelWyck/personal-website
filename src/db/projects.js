@@ -3,7 +3,7 @@ import owlRoostImg from "../assets/projectImages/owlroost.png";
 import waldoImg from "../assets/projectImages/waldo.png";
 import warpCommanderImg from "../assets/projectImages/warpCommander.png";
 import blogImg from "../assets/projectImages/blog.png";
-import doogleGriveImg from "../assets/projectImages/fileUploader.png";
+// import doogleGriveImg from "../assets/projectImages/fileUploader.png";
 import battleshipsImg from "../assets/projectImages/battleships.png";
 import pongImg from "../assets/projectImages/pong.png";
 import weatherWatchImg from "../assets/projectImages/weatherWatch.png";
@@ -89,15 +89,15 @@ const projects = [
         gitHubLink: "https://github.com/SamuelWyck/odin-blog-api",
         techUsed: ["React.js", "Express.js", "postgreSQL", "Passport.js", "Prisma ORM"]
     },
-    {
-        title: "Doogle Grive",
-        bannerImg: doogleGriveImg,
-        description: "A cloud storage web application akin to Google Drive. Users can upload files to the cloud and download them anywhere using their account. Users can also create folders to organize and manage their files.",
-        details: "Express's EJS engine is used to render all pages of this application on the server side.",
-        projectLink: "https://odin-file-drive.onrender.com/",
-        gitHubLink: "https://github.com/SamuelWyck/odin-file-drive",
-        techUsed: ["Express.js", "postgreSQL", "Passport.js"]
-    },
+    // {
+    //     title: "Doogle Grive",
+    //     bannerImg: doogleGriveImg,
+    //     description: "A cloud storage web application akin to Google Drive. Users can upload files to the cloud and download them anywhere using their account. Users can also create folders to organize and manage their files.",
+    //     details: "Express's EJS engine is used to render all pages of this application on the server side.",
+    //     projectLink: "https://odin-file-drive.onrender.com/",
+    //     gitHubLink: "https://github.com/SamuelWyck/odin-file-drive",
+    //     techUsed: ["Express.js", "postgreSQL", "Passport.js"]
+    // },
     {
         title: "Battleships",
         bannerImg: battleshipsImg,
